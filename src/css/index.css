@@ -1,0 +1,154 @@
+@import url("../css/card-front.css");
+@import url("../css/card-back.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif, Arial;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
+
+.aside {
+  width: 35%;
+  height: 100vh;
+  background-image: linear-gradient(130deg, #3c055c, #5f2bc0, #3c055c 50%);
+}
+
+form {
+  width: 425px;
+  margin-right: 14%;
+  line-height: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form input {
+  width: 100%;
+  height: 34px;
+  border-radius: 4px;
+  border: 1px solid #8e8593;
+  text-transform: uppercase;
+  padding: 0 6px;
+  outline: none;
+}
+
+form label {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #8e8593;
+}
+
+.cc-date-cvc {
+  display: flex;
+  gap: 14px;
+}
+
+.cc-date, .cc-cvc {
+  width: 50%;
+}
+
+.cc-date {
+  display: flex column;
+}
+
+.cc-date input {
+  width: 100px;
+}
+
+button {
+  color: #FFF;
+  background-color: #600594;
+  padding: 14px 0;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  transition: 0.2s;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+  .aside {
+    width: 100%;
+    height: 35vh;
+  }
+  .cc-back {
+    top: 5%;
+    left: 40%;
+    margin: 0 -10%;
+  }
+  .cc-front {
+    top: 15%;
+    left: 14%;
+    z-index: 1;
+  }
+  form {
+    margin: 4% 0;
+  }
+}
+@media (max-width: 428px) {
+  .cc-back {
+    top: 4%;
+    left: 25%;
+    max-width: 19rem;
+    height: 170px;
+  }
+  .black-belt {
+    height: 5vh;
+  }
+  .value-cvc {
+    margin: 1rem auto;
+  }
+  .cc-front {
+    top: 20%;
+    left: 4%;
+    width: 19rem;
+    height: 170px;
+  }
+  .cc-icon {
+    padding: 10px;
+  }
+  .cc-info {
+    padding: 15px 10px;
+  }
+  .cc-number {
+    font-size: 20px;
+  }
+  .value-name {
+    padding: 6px 0;
+    font-size: 16px;
+  }
+  .cc-expiration .label {
+    font-size: 10px;
+  }
+  .circle-1 {
+    bottom: 320px;
+    left: 90px;
+  }
+  .circle-2 {
+    bottom: 540px;
+    left: 200px;
+  }
+  form {
+    padding: 1.5%;
+    width: auto;
+  }
+  .cc-date input {
+    width: 85px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

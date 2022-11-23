@@ -1,0 +1,66 @@
+.cc-front {
+    background-color: #8e8593;
+    border-radius: 12px;
+    width: 360px;
+    min-width: 12.5rem;
+    max-width: 22.5rem;
+    height: 230px;
+    position: absolute;
+    top: 16%; left: 20%;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.cc-icon {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cc-info {
+    padding: 35px 20px;
+    display: flex column;
+    color: #fff;
+}
+
+.cc-number {
+    font-size: 26px;
+}
+
+.value-name {
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.cc-extra {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0;
+}
+
+.cc-expiration .label {
+    font-size: 12px;
+}
+
+.circle-1 {
+    width: 250px;
+    height: 250px;
+    background-color: #000;
+    border-radius: 50%;
+    opacity: .5;
+    position: relative;
+    bottom: 350px; left: 110px;
+    z-index: -1;
+}
+
+.circle-2 {
+    width: 250px;
+    height: 250px;
+    background-color: #000;
+    border-radius: 50%;
+    opacity: .2;
+    position: relative;
+    bottom: 580px; left: 230px;
+    z-index: -1;
+}

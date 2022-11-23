@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/index.css">
+
+    <title>Vite App</title>
+  </head>
+  <body>
+    <section class="content">
+      <main class="aside">
+      </main>
+
+      <div class="cc-front">
+
+        <div class="cc-icon">
+          <figure>
+            <img src="/cc-icon.svg" alt="">
+          </figure>
+
+          <figure>
+            <img src="/cc-visa.svg" alt="">
+          </figure>
+        </div>
+
+        <div class="cc-info">
+          <div class="cc-number">1234 5678 9012 3456</div>
+
+          <div class="value-name">VINICIUS S MACHADO</div>
+
+          <div class="cc-extra">
+            <div class="cc-expiration">
+              <div class="label">Validade</div>
+              <div class="value">02/32</div>
+            </div>
+
+            <img src="/cc-chip.svg" alt="ícone de chip de cartão de crédito" />
+          </div>
+        </div>
+
+        
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+      
+        
+      </div>
+
+      <div class="cc-back">
+        <div class="black-belt"></div>
+        <div class="value-cvc">123</div>
+
+        <div class="lines">
+          <div class="col-1">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+          </div>
+
+          <div class="col-2">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
+          </div>
+        </div>
+      </div>
+
+      <form action="" id="card-form">
+        <div class="cc-name">
+          <label for="cardholder-name">Titular do cartão</label>
+          <input type="text" name="card" id="cardholder-name">
+        </div>
+
+        <div class="input-number">
+          <label for="card-number">Número do cartão</label>
+          <input type="text" name="card" id="card-number">
+        </div>
+
+        <div class="cc-date-cvc">
+          <div class="cc-date">
+            <label for="expiration-date">Validade (MM/AA)</label>
+            <input type="text" name="card" id="card-month">
+            <input type="text" name="card" id="card-year">
+          </div>
+
+          <div class="cc-cvc">
+            <label for="card-cvc">CVC</label>
+            <input type="text" name="card" id="card-cvc">
+          </div>
+        </div>
+
+        <button type="submit">Confirmar</button>
+      </form>
+    </section>
+
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

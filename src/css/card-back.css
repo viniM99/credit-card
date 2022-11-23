@@ -1,0 +1,65 @@
+.cc-back {
+    background-color: #8e8593;
+    width: 22.5rem;
+    min-width: 12.5rem;
+    max-width: 22.5rem;
+    height: 14.37rem;
+    border-radius: .75rem;
+    position: absolute;
+    top: 50%; left: 28%;
+}
+
+.black-belt {
+    background-color: #000;
+    width: 100%;
+    height: 6vh;
+    margin-top: 1.62rem;
+}
+
+.value-cvc {
+    background-color: #fff;
+    width: 80%;
+    height: 2.12rem;
+    opacity: .5;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 1.25rem auto;
+    padding-right: .62rem;
+}
+
+.lines {
+    width: 60%; height: 2.5rem;
+    margin: 2.5rem auto;
+}
+
+.col-1, .col-2 {
+    display: flex;
+    gap: .75rem;
+    padding: .37rem 0;
+}
+
+.col-2 {
+    flex-direction: row-reverse;
+}
+
+.line-1 {
+    width: 60%;
+    height: .12rem;
+    background-color: #fff;
+    border-radius: .12rem;
+}
+
+.line-2 {
+    width: 30%;
+    height: .12rem;
+    background-color: #fff;
+    border-radius: .12rem;
+}
+
+.line-3 {
+    width: 10%;
+    height: .12rem;
+    background-color: #fff;
+    border-radius: .12rem;
+}
