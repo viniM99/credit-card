@@ -74,24 +74,24 @@
       <form action="" id="card-form">
         <div class="cc-name">
           <label for="cardholder-name">Titular do cartão</label>
-          <input type="text" name="card" id="cardholder-name">
+          <input type="text" name="card" id="cardholder-name"  placeholder="seu nome">
         </div>
 
         <div class="input-number">
           <label for="card-number">Número do cartão</label>
-          <input type="text" name="card" id="card-number">
+          <input type="text" name="card" id="card-number"  placeholder="0000 0000 0000 0000">
         </div>
 
         <div class="cc-date-cvc">
           <div class="cc-date">
             <label for="expiration-date">Validade (MM/AA)</label>
-            <input type="text" name="card" id="card-month">
-            <input type="text" name="card" id="card-year">
+            <input type="text" name="card" id="card-month" placeholder="02">
+            <input type="text" name="card" id="card-year" placeholder="32">
           </div>
 
           <div class="cc-cvc">
             <label for="card-cvc">CVC</label>
-            <input type="text" name="card" id="card-cvc">
+            <input type="text" name="card" id="card-cvc"  placeholder="123">
           </div>
         </div>
 
@@ -100,6 +100,6 @@
     </section>
 
 
-    <script type="module" src="/main.js"></script>
+    <script type="module" id="btn-confirm" src="/src/main.js"></script>
   </body>
 </html>
