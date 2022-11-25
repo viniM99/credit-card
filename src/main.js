@@ -1,4 +1,4 @@
-import imask from 'imask';
+import IMask from 'imask';
 
 const bgColorCircle = document.querySelector(".cc-front .circle-1")
 const bgColorShadow = document.querySelector(".cc-front .circle-2")
@@ -21,30 +21,30 @@ const cvcCodePattern = {
     mask: "000"
 }
 
-const cvcCodeMasked = imask(cvcCode, cvcCodePattern)
+const cvcCodeMasked = IMask(cvcCode, cvcCodePattern)
 
 const expirationMonth = document.getElementById('card-month')
 const expirationMonthPattern = {
-    mask: imask.MaskedRange,
+    mask: IMask.MaskedRange,
     from: 1,
     to: 12
 }
 
-const expirationMonthMasked = imask(expirationMonth, expirationMonthPattern)
+const expirationMonthMasked = IMask(expirationMonth, expirationMonthPattern)
 
 const expirationYear = document.getElementById('card-year')
 const expirationYearPattern = {
   mask: "YY",
   blocks: {
     YY: {
-      mask: imask.MaskedRange,
+      mask: IMask.MaskedRange,
       from: String(new Date().getFullYear()).slice(2),
       to: String(new Date().getFullYear() + 10).slice(2),
     },
   },
 }
 
-const expirationYearMasked = imask(expirationYear, expirationYearPattern)
+const expirationYearMasked = IMask(expirationYear, expirationYearPattern)
 
 const cardNumber = document.getElementById('card-number')
 const cardNumberPattern = {
@@ -65,4 +65,4 @@ const cardNumberPattern = {
   }
 }
 
-const cardNumberMasked = imask(cardNumber, cardNumberPattern)
+const cardNumberMasked = IMask(cardNumber, cardNumberPattern)
